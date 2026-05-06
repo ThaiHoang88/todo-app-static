@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 24px;
+  background-color: #f5f5f5;
+  color: #1f2937;
+}
+
+header,
+main {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 24px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 82, 0.15);
+  box-sizing: border-box;
+}
+
+#logo {
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+#new-task-form {
+  display: flex;
+  gap: 12px;
+}
+
+#new-task-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+}
+
+#new-task-submit {
+  padding: 10px 14px;
+  border: 1px solid #cccccc;
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+#new-task-submit:hover {
+  background-color: #d1d5db;
+}
+
+.task {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.text {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #dddddd;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit {
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+  background-color: #dbeafe;
+  cursor: pointer;
+}
+
+.edit:hover {
+  background-color: #bfdbfe;
+}
+
+.delete {
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+  background-color: #fee2e2;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #fecaca;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  #new-task-form {
+    flex-direction: column;
+  }
+
+  .task {
+    flex-direction: column;
+  }
+
+  .task-actions {
+    justify-content: flex-start;
+  }
+}
